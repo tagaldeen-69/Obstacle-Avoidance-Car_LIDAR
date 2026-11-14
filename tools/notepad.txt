@@ -1,0 +1,13 @@
+[env:uno]
+platform = atmelavr
+board = uno
+framework = arduino
+monitor_speed = 115200
+
+; Tell the builder where to find your global configs
+build_flags = 
+    -I include
+
+; Automatically download the required RPLidar library
+lib_deps = 
+    robopeak/RPLidar @ ^1.0.1
